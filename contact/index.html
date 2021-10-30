@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3EPFTQC2C"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-V3EPFTQC2C');
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="keywords" content="お問い合わせ">
+	<meta name="description" content="インターネットのご相談、サービスのお問い合わせはこちらから">
+	<meta name="viewport" content="width=1000">
+
+	<title>お問い合わせ　|　株式会社ディリット　｜　Diritto.Inc</title>
+
+	<link rel="stylesheet" media="only screen and (max-device-width:1000px)" href="../css/sp.css"/>
+	<link rel="stylesheet" media="screen and (min-device-width:1001px)" href="../css/main.css" />
+
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/array.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/jquery.bgswicher.js"></script>
+
+</head>
+<body>
+
+	<div id="main_flame">
+		<script>
+			<!--
+				make_header(1,0);
+				location.href = 'https://diritto.co.jp/forms/company/';
+			-->
+		</script>
+
+		<div id="top_space"></div>
+
+		<table id="sub_page_table">
+			<tr>
+				<td id="sub_page_left_title">
+					会社情報
+				</td>
+				<td id="sub_page_right_title">
+					お問い合わせ
+				</td>
+			</tr>
+
+			<tr>
+				<td id="left_menu" valign="top">
+					<script>
+						<!--
+							make_left_menu(1, 2, 10, 1);
+							//階層, メニュー1 or 2, 何番目のメニューか
+						-->
+					</script>
+				</td>
+
+				<td id="right_flame" valign="top">
+					<div class="right_flame_container">
+						<div id="p_list">
+							<a href="../index.php">トップ</a>　|　お問い合わせ
+						</div>
+
+						<div class="sub_page_title">お問い合わせフォーム</div>
+
+						<table class="contact_flow">
+							<tr>
+								<td class="contact_flow_td_check"><span class="english">STEP1</span><div class="sp_block"></div> フォーム入力</td>
+								<td class="contact_flow_td"><span class="english">STEP2</span><div class="sp_block"></div> 入力内容確認</td>
+								<td class="contact_flow_td"><span class="english">STEP3</span><div class="sp_block"></div> 完了</td>
+							</tr>
+						</table><!-- contact_flow -->
+
+						<div class="sub_page_sub_text">
+							※営業時間：<span class="english">10:00</span>～<span class="english">20:00</span>（土日祝日可能）<br>
+							※受付の混雑具合により、回答に時間がかかる場合がありますので、予めご了承下さい。<br>
+						</div>
+
+						<div class="bold sp_hide_block" style="font-size:24px; margin-bottom:40px;">お客様情報入力</div>
+						<div class="bold sp_block" style="font-size:38px; margin-bottom:40px;">お客様情報入力</div>
+
+						<form action="confirm.php" method="post">
+							<table class="contact_table">
+								<tr>
+									<td class="contact_td_width"><span class="bold">お名前</span>　<span class="required">※必須</span></td>
+									<td><input type="text" name="name" value="" placeholder="例：ディリット太郎" required></td>
+								</tr>
+
+								<tr>
+									<td><span class="bold">フリガナ</span>　<span class="required">※必須</span></td>
+									<td><input type="text" name="furigana" value="" placeholder="例：ディリットタロウ" required></td>
+								</tr>
+
+								<tr>
+									<td><span class="bold">法人名・部署名</span></td>
+									<td><input type="text" name="company" value="" placeholder="例：株式会社ディリット"></td>
+								</tr>
+
+								<tr>
+									<td><span class="bold">電話番号</span>　<span class="required">※必須</span></td>
+									<td><input type="number" name="telephone" value="" placeholder="例：080********" required></td>
+								</tr>
+
+								<tr>
+									<td><span class="bold">メールアドレス</span>　<span class="required">※必須</span></td>
+									<td><input type="email" name="email" value="" placeholder="例：***@gmail.com" required></td>
+								</tr>
+
+								<tr style="border-bottom:1px solid #bbb;">
+									<td><span class="bold">お問合せ内容</span>　<span class="required">※必須</span></td>
+									<td>
+										<textarea name="memo" rows="20" required></textarea>
+									</td>
+								</tr>
+
+							</table>
+							<input type="submit" class="submit_button hover" value="入力内容を確認">
+						</form>
+
+					</div><!-- right_flame_container -->
+				</td><!-- right_flame -->
+			</tr>
+
+		</table>
+
+		<script>
+			<!--
+				make_footer(1);
+			-->
+		</script>
+
+	</div><!-- main_flmae -->
+
+</body>
+</html>

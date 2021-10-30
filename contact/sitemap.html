@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3EPFTQC2C"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-V3EPFTQC2C');
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="keywords" content="サイトマップ">
+	<meta name="description" content="サイトマップはこちら">
+	<meta name="viewport" content="width=1000">
+
+	<title>サイトマップ　|　株式会社ディリット　｜　Diritto.Inc</title>
+
+	<link rel="stylesheet" media="only screen and (max-device-width:1000px)" href="../css/sp.css"/>
+	<link rel="stylesheet" media="screen and (min-device-width:1001px)" href="../css/main.css" />
+
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/array.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/jquery.bgswicher.js"></script>
+
+</head>
+<body>
+
+	<div id="main_flame">
+		<script>
+			<!--
+				make_header(1,0);
+			-->
+		</script>
+
+		<div id="top_space"></div>
+
+		<table id="sub_page_table">
+			<tr>
+				<td id="sub_page_left_title">
+					会社情報
+				</td>
+				<td id="sub_page_right_title">
+					サイトマップ
+				</td>
+			</tr>
+
+			<tr>
+				<td rowspan= "2" id="left_menu" valign="top">
+					<script>
+						<!--
+							make_left_menu(1, 2, 10, 6);
+							//階層, メニュー1 or 2, 何番目のメニューか
+						-->
+					</script>
+				</td>
+
+				<td id="right_flame" valign="top">
+					<div class="right_flame_container">
+						<div id="p_list">
+							<a href="../index.php">トップ</a>　|　サイトマップ
+						</div>
+
+						<div class="que_title">サイトマップ</div>
+
+						<div class="sub_page_sub_text">
+							<script>
+								var item = "";
+								for(var i = 0; i < array_header_menu2.length; i++){
+									document.write('<div class="sitemap_flame">');
+
+									document.write('<a href="../' + array_header_menu2[i][1] + '">');
+									document.write('<div class="sitemap_title">' + array_header_menu2[i][0] + '</div>');
+									document.write('</a>');
+
+									item = eval("array_header_menu2_item" + (i+1));
+									for(var j = 0; j < item.length; j++){
+										document.write('<a href="../' + item[j][1] + '">');
+										document.write('<div class="sitemap_item">' + item[j][0] + '</div>');
+										document.write('</a>');
+									}
+									document.write('<div class="margin_bottom20"></div>');
+
+									document.write('</div><!-- sitemap_flame -->');
+								}
+
+
+								document.write('<div class="sitemap_flame">');
+								document.write('<div class="sitemap_title">採用情報</div>');
+								for(var i = 0; i < array_header_menu2_item9.length; i++){
+									document.write('<a href="../' + array_header_menu2_item9[i][1] + '">');
+									document.write('<div class="sitemap_item">' + array_header_menu2_item9[i][0] + '</div>');
+									document.write('</a>');
+								}
+								document.write('<div class="margin_bottom20"></div>');
+								document.write('</div><!-- sitemap_flame -->');
+
+								document.write('<div class="sitemap_flame">');
+								document.write('<div class="sitemap_title">会社情報</div>');
+								for(var i = 0; i < array_header_menu2_item10.length; i++){
+									document.write('<a href="../' + array_header_menu2_item10[i][1] + '">');
+									document.write('<div class="sitemap_item">' + array_header_menu2_item10[i][0] + '</div>');
+									document.write('</a>');
+								}
+								document.write('<div class="margin_bottom20"></div>');
+								document.write('</div><!-- sitemap_flame -->');
+
+
+							</script>
+
+						</div><!-- sub_page_sub_text -->
+
+
+					</div><!-- right_flame_container -->
+				</td><!-- right_flame -->
+			</tr>
+
+			<tr>
+				<td id="right_flame_contact_flame">
+					<script>
+						<!--
+							make_right_flame_contact(1);
+						-->
+					</script>
+				</td>
+			</tr>
+
+		</table>
+
+		<script>
+			<!--
+				make_footer(1);
+			-->
+		</script>
+
+	</div><!-- main_flmae -->
+
+</body>
+</html>
